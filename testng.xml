@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuiteExample">
+   <test name="GroupingTests">
+
+       <groups>
+           <run>
+               <include name="Regression"/>
+           </run>
+       </groups>
+       <classes>
+           <class name="com.testNG.restAssured.NewTest">
+           </class>
+       </classes>
+   </test>
+</suite>
