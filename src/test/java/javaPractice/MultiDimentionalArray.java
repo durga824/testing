@@ -6,15 +6,28 @@ public class MultiDimentionalArray {
 
     public static void main(String[] args) {
 
-        List<String> al = new ArrayList<>();
-        al.add("Sam");
-        al.add("Sita");
+//        List<String> al = new ArrayList<>();
+//        al.add("Sam");
+//        al.add("Sita");
+//
+//        System.out.println(al);
+//
+//        al.remove(1);
+//
+//        System.out.println("Aftre Deleting" + al);
 
-        System.out.println(al);
+        String name = "My name is Ramu";
+        String reversed = "";
 
-        al.remove(1);
+        for (int i = name.length()-1; i>=0; i--){
 
-        System.out.println("Aftre Deleting" + al);
+            reversed +=name.charAt(i);
+        }
+
+//        StringBuilder sb = new StringBuilder(name);
+//        reversed = sb.reverse().toString();
+
+        System.out.println("reversed word is :" + reversed );
     }
 
 
