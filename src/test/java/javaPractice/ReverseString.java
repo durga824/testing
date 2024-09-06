@@ -2,7 +2,7 @@ package javaPractice;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultiDimentionalArray {
+public class ReverseString {
 
     public static void main(String[] args) {
 
@@ -18,14 +18,14 @@ public class MultiDimentionalArray {
 
         String name = "My name is Ramu";
         String reversed = "";
+//
+//        for (int i = name.length()-1; i>=0; i--){
+//
+//            reversed +=name.charAt(i);
+//        }
 
-        for (int i = name.length()-1; i>=0; i--){
-
-            reversed +=name.charAt(i);
-        }
-
-//        StringBuilder sb = new StringBuilder(name);
-//        reversed = sb.reverse().toString();
+        StringBuilder sb = new StringBuilder(name);
+        reversed = sb.reverse().toString();
 
         System.out.println("reversed word is :" + reversed );
     }
