@@ -5,26 +5,47 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.*;
 
 public class SeleniumPractice {
 
     public static void main(String[] args) throws InterruptedException, IOException {
-        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+//        String Reverse
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter text : ");
+//        String input = scanner.nextLine();
+//
+//        StringBuilder stringBuilder = new StringBuilder(input);
+//        System.out.println(stringBuilder.reverse());
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.location = 'https://dev-web.creditrepaircloud.com/login'");
-        Thread.sleep(3000);
-        WebElement emailInput = driver.findElement(By.xpath("//input[@name='email']"));
-        js.executeScript("arguments[0].value = 'abcd.yopmail.com'", emailInput);
+//        Remove duplicates from Array
+        String name = "Durgarao";
+
+        Set<Character> inp = new HashSet<>();
+        StringBuilder result = new StringBuilder();
+
+        for (char c: name.toCharArray()){
+            if (inp.add(c)){
+                result.append(c);
+            }
+        }
+        System.out.println(result);
 
 
-        TakesScreenshot screenshot = (TakesScreenshot) driver;
-        File file = screenshot.getScreenshotAs(OutputType.FILE);
+        int [] num = {2, 4, 5, 4, 2, 8, 3, 7};
 
-        File desFile = new File("desc/path");
-        FileUtils.copyFile(file, desFile);
+        Set<Integer> removed = new HashSet<>();
+
+        for (int num2: num){
+            removed.add(num2);
+        }
+
+        System.out.println(removed);
+
+
+        File screenShote = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(screenShote, new File("path"));
 
     }
 }

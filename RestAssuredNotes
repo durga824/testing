@@ -1,0 +1,17 @@
+Ways we can create request body for Post request
+-------------------------------------------------
+1. Hashmap
+2. using org.json
+3. using POJO (Plain old Java Object)
+4. Using external json file
+
+
+How we can pass the path and Query parameters
+---------------------------------------------
+
+https://reqres.in/api/users?page=2
+https://reqres.in/api/users?page=2&id=5
+
+
+cookies and headers
+--------------------

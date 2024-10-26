@@ -1,0 +1,48 @@
+Cypress Introduction
+--------------------
+
+Frontend web automation testing tool.
+
+modern web applications
+
+React JS, Angularjs ...
+
+Open source
+
+Features:
+---------
+
+Time travel
+Debuggability
+Automatic waits / Built in waits
+consistency results
+screen shot and videos
+
+Limitations
+------------
+Can't automate window base/ mobile apps
+limited support
+Java script/type script
+reading and writing
+
+
+Environment Setup:
+------------------
+1. Download & install nodejs
+2. Download & install visual studio code (vsCode)
+3. Create a new folder for project & open in vsCode
+4. open cmd/terminal then execute below command
+ npm -i init     -----> created package.json file
+
+5. to install cypress
+ npm install cypress --save -dev
+
+6. Start cypress
+ npx cypress open    (or)
+ node_modules/.bin/cypress open
+
+
+Cypress methods
+----------------
+1. Launch Url ---> cy.visit('url')
+2. find locator ---> cy.get('locator value')

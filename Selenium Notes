@@ -1,0 +1,12 @@
+CSS  -  Cascading style sheets
+---------------------------------
+
+tag id  ---- >   tag#id      --- Tag is optional
+tag class  ----->   tag.classname
+tag attribute    -----> tag[attribute="value"]
+tag class attribute   ----->   tag.classname[attribute="value"]
+
+
+Xpath -- Xpath is an address of the element
+DOM -- Document object modal
+--------------------------------------------

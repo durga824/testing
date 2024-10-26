@@ -36,7 +36,8 @@ public class PostMethod {
         RestAssured.baseURI = baseUrl;
 
         // Making the POST request with the Bearer token in the header
-        Response response = RestAssured.given()
+        Response response = RestAssured
+                .given()
                 .contentType(ContentType.JSON) // Set content type as JSON
                 .header("Authorization", "Bearer " + bearerToken) // Add Bearer token as a header
                 .body(jsonPayload) // Set the JSON payload
